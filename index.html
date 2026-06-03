@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Zeal | Architectural Integrity through Open Source</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&family=Inter:wght@400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (must load before config) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/tailwind.config.js"></script>
+
+  <!-- Custom styles -->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="font-body-md text-body-md antialiased overflow-x-hidden">
+
+  <!-- Background Particles -->
+  <div class="fixed inset-0 pointer-events-none z-0" id="particle-container"></div>
+
+  <!-- ============================================================
+       Navigation
+  ============================================================ -->
+  <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+      <a class="flex items-center" href="#">
+        <img alt="Zeal Logo" class="h-10 w-auto object-contain"
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj-xma5UvNhJuJWf9HcpsFP6ujUfs7GoAVvz9Zn0kMxM-3FEIUuGFTUAm36PRkLRh5HR5RnGZEKcWFX_FjyrYcfwrAaOcqC2LopYR7N-rsZEnHbf-nUFGazk_fBJs5FYD4TLuFmGrlWk16I0_oSdZ-cdDW4_4IUv3RFZJ77ZkhwuUMLf9MYdmOhvdLD3wA5q-bJaDFzvSIAS603LQqrStFGFgzTH2ASZBawIZzWMOcJtkrs2fDfOQnj2K-gWM05zSrFsoLWz9vBFg" />
+        <span class="ml-3 font-headline-lg text-xl tracking-tighter uppercase">Zeal</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-10">
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#philosophy">Philosophy</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#products">Products</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#ecosystem">Ecosystem</a>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#founder">Founder</a>
+        <a class="px-6 py-2 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest btn-squish" href="#contact">Contact</a>
+      </div>
+
+      <button class="md:hidden text-primary">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       1. Hero Section
+  ============================================================ -->
+  <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0" id="morphing-background-container">
+      <div class="hero-dot-overlay"></div>
+    </div>
+
+    <div class="relative z-10 text-center px-margin-mobile reveal-on-scroll active">
+      <h1 class="font-display-lg text-[100px] md:text-[200px] leading-none text-primary uppercase tracking-tighter mb-4">
+        ZEAL
+      </h1>
+      <p class="font-label-sm text-label-sm md:text-body-md tracking-[0.4em] uppercase text-on-surface-variant mb-8">
+        Architectural Precision.
+      </p>
+      <div class="max-w-3xl mx-auto mb-12 space-y-2 opacity-80">
+        <p class="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed">Solving niche system design problems through architectural precision.</p>
+        <p class="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed">Building a modular ecosystem for domain-specific software engineering.</p>
+        <p class="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed">Crafting open-source instruments for the next generation of architects.</p>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <a class="px-10 py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest btn-squish" href="#products">Explore Instruments</a>
+        <a class="px-10 py-4 border border-primary text-primary font-label-sm text-label-sm uppercase tracking-widest btn-squish" href="#ecosystem">Ecosystem</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       2. Philosophy Section
+  ============================================================ -->
+  <section class="py-32 bg-white relative overflow-hidden" id="philosophy">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+      <div class="max-w-4xl mx-auto text-center reveal-on-scroll active">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-6 block">Our Ethos</span>
+        <h2 class="font-headline-lg text-headline-lg-mobile md:text-[64px] uppercase text-primary leading-none mb-12">
+          Architectural Integrity through Open Source
+        </h2>
+        <div class="h-20 w-[1px] bg-primary mx-auto mb-12"></div>
+        <blockquote class="text-2xl md:text-4xl font-display-lg italic text-on-surface-variant leading-tight">
+          "Good design is a lot like clear thinking made visible."
+        </blockquote>
+        <cite class="mt-6 block font-label-sm text-label-sm uppercase tracking-widest text-outline">— Edward Tufte</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. Products Section
+  ============================================================ -->
+  <section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal-on-scroll active" id="products">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-4">
+      <div>
+        <span class="font-label-sm text-label-sm uppercase text-outline mb-2 block tracking-widest">Inventory</span>
+        <h2 class="font-headline-lg text-4xl uppercase text-primary">Modular Instruments</h2>
+      </div>
+      <div class="font-label-sm text-label-sm text-outline uppercase">[ Precision Grade ]</div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+
+      <!-- ZEA -->
+      <div class="group border border-outline-variant p-8 card-hover bg-white flex flex-col justify-between">
+        <div>
+          <div class="mb-12 flex justify-between items-start">
+            <span class="text-4xl font-display-lg">01</span>
+            <img alt="ZEA Logo" class="h-12 w-auto object-contain"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy3ZUTjpS-XdWz8dVT8y-WJhxIqidEN-AKl9HYc66gN86r6OBgOd-M4F3DXue7S_2YbN3F1pp5_WDx2u-NHI14xsNXPtJsOCxqoXUGbGZYW92ITgMKbjYJXNHmabIp9ta0A19I5w5v_aOjjIt5MLxY5nrsoHG-YyIr1Im9NViR_FOi4khTZVV3vVp2unG6yNpmlQy7dF41F3_bjeNCetaOCy1xl5XScRD572T9Ifl3M6Eb0FkiXJQ50eAErkpjB86bTUiKi-wBMfs" />
+          </div>
+          <h3 class="font-headline-lg text-2xl uppercase mb-4">ZEA</h3>
+          <p class="text-on-surface-variant mb-8 text-sm leading-relaxed">
+            Graph-based engine designed for complex software architectures and structural visualization.
+          </p>
+        </div>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-2 inline-block self-start hover:gap-4 transition-all" href="#product-zea.md">Documentation</a>
+      </div>
+
+      <!-- Zeal Design -->
+      <div class="group border border-outline-variant p-8 card-hover bg-white flex flex-col justify-between">
+        <div>
+          <div class="mb-12 flex justify-between items-start">
+            <span class="text-4xl font-display-lg">02</span>
+            <img alt="Zeal Design Logo" class="h-12 w-auto object-contain"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1uC4ei0V_mcKoFK2smJxmdcdLNVo1XBsbM4DMO1-S1YCSn4i36JIq75UC_9uyfH-7AOFkA9Rj8uwipqNDPvx858L-hkayW3h7O9R18JEj3iUS6BNTMl6S17c3oYwOGXEXvyjBd40xBzj5qDAqBo0SBBxXhQip7Pe75xHSR3dqLP5Pbi1QJ3JDQutJr_ta5CAv8svv2-Gdq7Ba4Nj-RzqAzx82Y6HklnAXZly8AKUfT1iyzQfOvJQkOONibXvvbFHb3dChlx_Cj_w" />
+          </div>
+          <h3 class="font-headline-lg text-2xl uppercase mb-4">Zeal Design</h3>
+          <p class="text-on-surface-variant mb-8 text-sm leading-relaxed">
+            Professional UI toolkit and system design tools crafted for architectural rigor and scalability.
+          </p>
+        </div>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-2 inline-block self-start hover:gap-4 transition-all" href="#product-design.md">UI Library</a>
+      </div>
+
+      <!-- Zeal Neural -->
+      <div class="group border border-outline-variant p-8 card-hover bg-white flex flex-col justify-between">
+        <div>
+          <div class="mb-12 flex justify-between items-start">
+            <span class="text-4xl font-display-lg">03</span>
+            <img alt="Zeal Neural Logo" class="h-12 w-auto object-contain"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT7hMQF7pdHAJyCe1kv-hIrwF5F6O7yPA-ngh3hHQcfqn4FjFJ5bRrO5DNJI6iLl2SY1HflCFYbzRrnKEWfh1XYkr1Y3XAoyOvwoaY1SEd8WL--H6sWzR0eOdwqv4EkhhnYvVjjxbMh6HCKrTqwc-VF-efH-CXqBBeD9ACyIrVLQSHvKPKJkJlPtSefW-JxhlE1nvbdYgpRYwJ5qmrFZQAltmmAqg5qBL1T2yMji6QfD9X_Hqk8Fbpw95-OJDJ6o-DtpBF6flZsBo" />
+          </div>
+          <h3 class="font-headline-lg text-2xl uppercase mb-4">Zeal Neural</h3>
+          <p class="text-on-surface-variant mb-8 text-sm leading-relaxed">
+            Advanced builder for neural network architectures, optimizing performance and scale.
+          </p>
+        </div>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-2 inline-block self-start hover:gap-4 transition-all" href="#product-neural.md">Neural Labs</a>
+      </div>
+
+      <!-- Zeal Draw -->
+      <div class="group border border-outline-variant p-8 card-hover bg-white flex flex-col justify-between">
+        <div>
+          <div class="mb-12 flex justify-between items-start">
+            <span class="text-4xl font-display-lg">04</span>
+            <img alt="Zeal Draw Logo" class="h-12 w-auto object-contain"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcvRb40IK_e4OTT2VDaoyFpLUguDsKYHtFkVQGL7tyzi9fnzlSH2Pnqs_0l6dxnT5f67dMdrMyWHd_S_lkCvSPY8cFgmo_5ttREIdWkUTCr94KbUuo6_SoUSv64xhIe-tKNWkgwu0NEoKqaqanyM8VhYpVr3ic_9O6LwlIXWHwnKlhcp2bsMcua_jVX-ZytLRu1EVqhOAF_BhZbZNccq_5CpySmUGEyFwqBwe37RFxuQEAeB_HzMi_oGJ9pCVDLZMVFFkyGmzMwlQ" />
+          </div>
+          <h3 class="font-headline-lg text-2xl uppercase mb-4">Zeal Draw</h3>
+          <p class="text-on-surface-variant mb-8 text-sm leading-relaxed">
+            Precision vector manipulation tool engineered for technical artisans and digital drafting.
+          </p>
+        </div>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest border-b border-primary pb-2 inline-block self-start hover:gap-4 transition-all" href="#product-draw.md">Editor</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. Ecosystem Section
+  ============================================================ -->
+  <section class="py-32 bg-primary text-on-primary overflow-hidden" id="ecosystem">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+        <div class="reveal-on-scroll active">
+          <span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-white/50 mb-6 block">Connected Intelligence</span>
+          <h2 class="font-display-lg text-5xl md:text-7xl uppercase mb-12 leading-tight">The Zeal Ecosystem</h2>
+          <p class="text-xl text-white/70 mb-12 leading-relaxed">A holistic environment for learning and sharing architectural patterns. Zeal isn't just a set of tools; it's a foundation I'm building for the next generation of software engineers.</p>
+
+          <div class="space-y-8">
+            <a class="flex items-center gap-6 group" href="https://manish-surya-r.github.io/zeal-core/" target="_blank">
+              <div class="w-16 h-16 border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-all">
+                <img alt="Zeal Core Logo" class="h-10 w-auto object-contain"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvsDK5hvqGEFqs0tUkIVEuqj1jZQfK7xK0-enCf5r_Ry3JMLbJ7b9NI3oDr0gyA0LUsXnBsSxPZKvrnPzpcsCgoj2oRxPwHyikGrQ440lJhvZ38mZJBsDI9JX7ZiDQ-_kgDpLzrkzkyWKmZ77XFYtu5Iep45RkpR228C7tyFxtQJOIcN0q1et6Ls2QfYDMkqXWi7SIAQ823ovJVgugaXetZy7RZHKuXwytKBfRAJb1mDlY6G2NkuFQzj6hjy-HoP-ilPs3ntecu-Y" />
+              </div>
+              <div>
+                <h4 class="font-headline-lg text-xl uppercase tracking-wider">Zeal Core</h4>
+                <p class="text-white/50">Integrated Learning Platform</p>
+              </div>
+            </a>
+
+            <a class="flex items-center gap-6 group" href="https://zeal-think.vercel.app/" target="_blank">
+              <div class="w-16 h-16 border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-primary transition-all">
+                <img alt="Zeal Think Logo" class="h-10 w-auto object-contain"
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOJMMDWj5rU0MPT_ASLQPGUZkQkBcspZD7MXEfq8YcNo4tA3kIzx_33knCicjnxcrFg7DtLYFSB_RAKokbzwaqS-6UJ7y0WAIAIGgo3p3Rp2mPWcQ06EJuuGZ1Gg4fxa5Fg6hRB7EOb2Ts1N7_lCT7q4MAx6I22Pzir6MMBDeOc58d-3MEcH4qJt6pLbco-1Te08jvERKVa5gxbMkdzoU-UvEGFJK60Cww-flpqNbOrI2pDDm1ASiTS5TtZntXGZEj_6b_ml1Yui8" />
+              </div>
+              <div>
+                <h4 class="font-headline-lg text-xl uppercase tracking-wider">Zeal Think</h4>
+                <p class="text-white/50">Architecture &amp; Patterns Repository</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Orbiting visual -->
+        <div class="relative hidden lg:block reveal-on-scroll active">
+          <div class="aspect-square border border-white/10 rounded-full flex items-center justify-center animate-[spin_60s_linear_infinite]">
+            <div class="w-3/4 h-3/4 border border-white/20 rounded-full flex items-center justify-center">
+              <div class="w-1/2 h-1/2 border border-white/40 rounded-full"></div>
+            </div>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img alt="Zeal Logo" class="h-24 invert opacity-50"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIzR5N_bSftXh_Ey_A2ENNFQ9vaakBdMb2nC3-v9v3dViU1lkV2DI9WfOFnj27ht2yJDYHJ-EadQxv8WWJ1CidNka0SJRHKBLtGL2Zsh7RxshbDFaN_RtTWaAKh0qHex334A4gZBaVRIqSCXBpyJ-UhF7hs83QnSTX8u7afATJ7P50iMCjDbMYCasnnv-1fOSMxd0jN9EHKgb6NnJ2oDdKmZ39G6rzvNdBhn00R70fbbUabGjdtaQA9SUCGpzAtvCdOSDUAEsi5zM" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. Roadmap Section
+  ============================================================ -->
+  <section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="roadmap">
+    <div class="reveal-on-scroll active">
+      <h2 class="font-headline-lg text-4xl uppercase text-primary mb-16 text-center">Vision Roadmap</h2>
+
+      <div class="relative">
+        <div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant hidden md:block"></div>
+
+        <div class="space-y-24">
+
+          <!-- Phase 1 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right">
+              <div class="p-6 border border-primary/20 bg-surface-container-low rounded-lg shadow-sm">
+                <h4 class="text-xl font-headline-lg uppercase mt-2">Phase 1: Core Systems &amp; Niche Solving</h4>
+                <p class="text-on-surface-variant mt-4">I am focusing on building the fundamental engines for structural visualization, specifically targeting complex niche problems in system design that larger toolkits overlook.</p>
+              </div>
+            </div>
+            <div class="w-5 h-5 bg-primary rounded-full z-10 hidden md:block ring-4 ring-primary/20"></div>
+            <div class="w-full md:w-1/2 md:pl-12"></div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+            <div class="w-full md:w-1/2 md:pr-12"></div>
+            <div class="w-4 h-4 bg-outline-variant rounded-full z-10 hidden md:block"></div>
+            <div class="w-full md:w-1/2 md:pl-12">
+              <h4 class="text-xl font-headline-lg uppercase mt-2">Phase 2: Domain-Specific Expansion</h4>
+              <p class="text-on-surface-variant mt-4">My goal is to expand the ecosystem with domain-specific builders, creating specialized neural and architectural tools for high-precision engineering workflows.</p>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right">
+              <h4 class="text-xl font-headline-lg uppercase mt-2">Phase 3: Ecosystem &amp; Community Integrity</h4>
+              <p class="text-on-surface-variant mt-4">I will open my architectural patterns library for community contributions, maturing Zeal into a global standard for system-level design and engineering excellence.</p>
+            </div>
+            <div class="w-4 h-4 bg-outline-variant rounded-full z-10 hidden md:block"></div>
+            <div class="w-full md:w-1/2 md:pl-12"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. Community Section
+  ============================================================ -->
+  <section class="py-24 border-y border-outline-variant mono-gradient" id="community">
+    <div class="text-center px-margin-mobile reveal-on-scroll active">
+      <h2 class="font-display-lg text-4xl md:text-6xl uppercase mb-8">Collaborate with me.</h2>
+      <p class="max-w-2xl mx-auto text-on-surface-variant mb-12">Zeal is built by me, for the community. I am looking for architects, designers, and engineers who care about structural integrity.</p>
+      <a class="px-12 py-5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-[0.2em] inline-block btn-squish" href="#contact">Join the movement</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. Founder Section
+  ============================================================ -->
+  <section class="py-32 dot-pattern" id="founder">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="flex flex-col lg:flex-row items-center gap-20">
+
+        <div class="w-full lg:w-1/2 reveal-on-scroll active">
+          <div class="bg-white p-4 border border-outline-variant shadow-2xl relative">
+            <div class="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-primary"></div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 border-b border-r border-primary"></div>
+            <img alt="Manish Sri Sai Surya Routhu" class="w-full h-auto grayscale filter contrast-125 block"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXxo85r_RIwt1B_pKzzMwyJI1Y-rrWFWCrZVf_me77WV-HpsZKr32r8wz5neF10W8j7vs9eSgHii9_exRPfdo-E4EuwkIf1nrorn9f2Iy4MLLd60rtAs1QQdFMkmWVBTHzjOPzycJpYxiBroAQy1SRFtvft2_J2_8rP3iuWgVkdzoOylULomY7UC0sAmqdCBaoYvvkirS9w-RMzDr6UwFTR7WFJSZSFWNy3HJO6JUT_acFIQtc_gvJWe0IKczVgiQK1tl1MLCU1ic" />
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 reveal-on-scroll active">
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-6 block">Visionary &amp; Architect</span>
+          <h2 class="font-headline-lg text-headline-lg-mobile md:text-5xl text-primary uppercase mb-8 leading-none">Manish Sri Sai Surya Routhu</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>Software architect and solo founder of Zeal. I am dedicated to building Zeal as a passion project focused on system architecture, system design problems, and neural architectures.</p>
+            <p>With a philosophy grounded in structural integrity and mathematical precision, he leads the development of tools that bridge the gap between abstract design and high-performance engineering.</p>
+          </div>
+          <div class="mt-12 flex items-center gap-8">
+            <a class="font-label-sm text-label-sm uppercase border-b border-primary pb-1 hover:text-primary transition-colors" href="#">LinkedIn</a>
+            <a class="font-label-sm text-label-sm uppercase border-b border-primary pb-1 hover:text-primary transition-colors" href="#">Portfolio 2024</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. Footer
+  ============================================================ -->
+  <footer class="bg-primary text-on-primary py-20" id="contact">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+
+      <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+        <div class="max-w-sm">
+          <h3 class="font-headline-lg text-3xl uppercase mb-6 tracking-tighter">Zeal</h3>
+          <p class="text-white/60 text-sm leading-relaxed mb-8">
+            Architectural precision in software engineering. Modular, open-source, and performance-driven.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+              <span class="material-symbols-outlined text-sm">code</span>
+            </a>
+            <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+              <span class="material-symbols-outlined text-sm">mail</span>
+            </a>
+            <a class="w-10 h-10 border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+              <span class="material-symbols-outlined text-sm">alternate_email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-20">
+          <div>
+            <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-white/40 mb-6">Explore</h4>
+            <ul class="space-y-4 font-label-sm text-label-sm text-white/80 uppercase">
+              <li><a class="hover:text-white" href="#philosophy">Philosophy</a></li>
+              <li><a class="hover:text-white" href="#products">Products</a></li>
+              <li><a class="hover:text-white" href="#ecosystem">Ecosystem</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-white/40 mb-6">Contact</h4>
+            <ul class="space-y-4 font-label-sm text-label-sm text-white/80 uppercase">
+              <li><a class="hover:text-white" href="#contact-github.md">GitHub</a></li>
+              <li><a class="hover:text-white" href="#contact-mail.md">Email</a></li>
+              <li><a class="hover:text-white" href="#contact-linkedin.md">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <span class="text-white/40 text-xs uppercase tracking-widest">© 2024 Zeal. Engineered for Permanence.</span>
+        <div class="flex gap-8 text-xs uppercase tracking-widest text-white/40">
+          <a class="hover:text-white" href="#">Privacy</a>
+          <a class="hover:text-white" href="#">Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       Scripts (deferred, DOM-ready order)
+  ============================================================ -->
+  <script src="js/morphing-background.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/particles.js"></script>
+
+</body>
+</html>
